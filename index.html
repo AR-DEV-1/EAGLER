@@ -12,12 +12,12 @@
 		<meta property="og:description" content="Play minecraft 1.20 in your browser" />
 		<meta property="og:image" content="favicon.png" />
 		<link type="image/png" rel="shortcut icon" href="favicon.png" />
-		<script type="text/javascript" src="classes.js"></script>
+		<script type="text/javascript" src="game_classes.js"></script>
 		<script type="text/javascript" src="fix-webm-duration.js"></script>
 		<script type="text/javascript">
 			window.addEventListener("load", () => {
 				if(document.location.href.startsWith("file:")) {
-					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+					alert("ERROR: HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP. The offline version will be out soon. Be patient, You Eagler!");
 				}else {
 					window.eaglercraftXOpts = {
 						container: "game_frame",
